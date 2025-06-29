@@ -1,0 +1,1 @@
+add_subdirectory_ifdef(CONFIG_TM1638 tm1638)

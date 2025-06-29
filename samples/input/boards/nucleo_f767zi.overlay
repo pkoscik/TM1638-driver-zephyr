@@ -1,0 +1,12 @@
+/ {
+	tm1638_0: tm1638 {
+        compatible = "titanmicro,tm1638";
+        stb-gpios = <&gpiof 0 GPIO_ACTIVE_HIGH>;
+        clk-gpios = <&gpiof 1 GPIO_ACTIVE_HIGH>;
+        dio-gpios = <&gpiof 2 (GPIO_ACTIVE_HIGH | GPIO_ACTIVE_HIGH)>; 
+    };
+};
+
+&gpiof {
+	status = "okay";
+};

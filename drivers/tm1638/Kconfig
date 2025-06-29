@@ -1,0 +1,6 @@
+config TM1638
+	bool "TM1638 LED controller and key scanner driver"
+	default y
+	depends on DT_HAS_TITANMICRO_TM1638_ENABLED
+	help
+	  Enable driver for the TM1638 controller.

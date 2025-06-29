@@ -1,0 +1,21 @@
+description: Titan Microelectronics TM1638 LED controller
+
+compatible: "titanmicro,tm1638"
+
+include: base.yaml
+
+properties:
+  stb-gpios:
+    type: phandle-array
+    required: true
+    description: Strobe pin (STB)
+
+  clk-gpios:
+    type: phandle-array
+    required: true
+    description: Clock pin (CLK)
+
+  dio-gpios:
+    type: phandle-array
+    required: true
+    description: Data I/O pin (DIO)
